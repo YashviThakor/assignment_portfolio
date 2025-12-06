@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cristian Munoz - Product Designer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            // Poppins will be the default, but explicitly named 'poppins'
+            sans: ['Poppins', 'sans-serif'],
+          },
+          // Custom large font sizes and line heights for the hero section
+          fontSize: {
+            'hero-xl': ['11rem', { lineHeight: '10rem' }], // 188px scaled down for responsiveness
+            'hero-lg': ['6rem', { lineHeight: '5.5rem' }],  // 109px scaled down for responsiveness
+            'stat-xl': ['7.5rem', { lineHeight: '7.5rem' }], // 120px scaled down for responsiveness
+            'stat-lg': ['2.125rem', { lineHeight: '2.125rem' }], // 34px
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* Gradient Text Style */
+    .gradient-text {
+      background: linear-gradient(90deg, #FA709A 0%, #FEE140 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    /* Set Poppins as the body font */
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    /* Hide the dropdown by default, only showing it for illustrative purposes in the original design */
+    .dropdown-menu {
+      /* This is an illustrative element from the Figma, usually managed by JS state. */
+      /* For a static replica, we can leave it visible or hide it for clean code. I will hide it. */
+      display: none; 
+    }
+
+    /* Original large font sizes for larger screens (desktop first) */
+    @media (min-width: 1280px) { /* xl breakpoint in Tailwind */
+        .xl-hero-text-xl {
+            font-size: 11.75rem; /* ~188px */
+            line-height: 10.5rem; /* ~169px */
+        }
+        .xl-hero-text-lg {
+            font-size: 6.8125rem; /* ~109px */
+            line-height: 6.125rem; /* ~98px */
+        }
+    }
+  </style>
+</head>
+<body class="bg-black text-white min-h-screen">
+
+  <header class="container mx-auto px-6 lg:px-24 py-8">
+    <div class="flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3" aria-label="Cristian Munoz Web Design Home">
+        <img src="https://static.codia.ai/image/2025-12-05/b56yXOHYDp.png" alt="Logo" class="w-10 h-10 lg:w-15 lg:h-15">
+        <span class="text-white text-3xl lg:text-5xl font-bold">Web</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8" aria-label="Main Navigation">
+        <a href="#hero" class="text-white text-xl hover:text-gray-300">Home</a>
+        <a href="#portfolio" class="text-white text-xl hover:text-gray-300">Portfolio</a>
+        <a href="#skills" class="text-white text-xl hover:text-gray-300">Skills</a>
+        <a href="#" class="text-white text-xl hover:text-gray-300">About Me</a>
+      </nav>
+      
+      <button class="md:hidden text-white text-2xl" aria-label="Open menu">
+        &#9776;
+      </button>
+    </div>
+  </header>
+
+  <main class="relative min-h-screen pt-10 md:pt-20 lg:pt-0" id="hero">
+    
+    <div class="dropdown-menu absolute top-20 right-40 z-10">
+      </div>
+
+    <div class="container mx-auto px-6 lg:px-24 py-10 md:py-20 lg:py-40">
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-10">
+        <div class="flex-1 max-w-full lg:max-w-xl">
+          <div class="mb-10 lg:mb-16">
+            <h1 class="text-white text-5xl md:text-hero-xl xl-hero-text-xl font-extrabold mb-4 uppercase">
+              PRODUCT<br>DESIGNER
+            </h1>
+            <h2 class="gradient-text text-3xl md:text-hero-lg xl-hero-text-lg font-bold">
+              CRISTIAN MUN0Z
+            </h2>
+          </div>
+          
+          <div class="flex items-center gap-5 md:gap-11 mb-8">
+            <a href="#" aria-label="Instagram">
+                <img src="https://static.codia.ai/image/2025-12-05/zfoz5e4b0y.png" alt="Instagram Icon" class="w-10 h-10 md:w-13 md:h-13 border border-white rounded">
+            </a>
+            <a href="#" aria-label="Figma Profile">
+                <img src="https://static.codia.ai/image/2025-12-05/GeTzgiEbMr.png" alt="Figma Icon" class="w-10 h-10 md:w-13 md:h-13 border border-white rounded">
+            </a>
+            <a href="#" aria-label="LinkedIn Profile">
+                <img src="https://static.codia.ai/image/2025-12-05/yjngEZRxKp.png" alt="LinkedIn Icon" class="w-10 h-10 md:w-13 md:h-13 border border-white rounded">
+            </a>
+            <a href="#" aria-label="Twitter Profile">
+                <img src="https://static.codia.ai/image/2025-12-05/FzKLcVF3eY.png" alt="Twitter Icon" class="w-10 h-10 md:w-13 md:h-13 border border-white rounded">
+            </a>
+            <a href="#" aria-label="Telegram Profile">
+                <img src="https://static.codia.ai/image/2025-12-05/crtaBcn5Hc.png" alt="Telegram Icon" class="w-10 h-10 md:w-13 md:h-13 border border-white rounded">
+            </a>
+            <a href="#" aria-label="Medium Profile">
+                <img src="https://static.codia.ai/image/2025-12-05/eEVHTK9Azg.png" alt="Medium Icon" class="w-10 h-10 md:w-13 md:h-13 border border-white rounded">
+            </a>
+          </div>
+          
+          <a href="/cristian-munoz-cv.pdf" download class="inline-flex items-center justify-center bg-gray-800 text-white px-6 md:px-8 py-3 md:py-4 rounded hover:bg-gray-700 transition gap-2" role="button">
+            <span class="text-base md:text-xl">Download Curriculum Vitae</span>
+            <img src="https://static.codia.ai/image/2025-12-05/C9H7g0VZUg.png" alt="Download Icon" class="w-5 h-5">
+          </a>
+        </div>
+        
+        <div class="flex-1 flex justify-center lg:justify-end">
+          <img src="https://static.codia.ai/image/2025-12-05/DxHCNufVcu.png" alt="Designer workspace with computer, tablet, and paper sketches" class="w-full max-w-sm md:max-w-md lg:max-w-xl object-cover rounded-lg shadow-2xl">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="container mx-auto px-6 lg:px-24 py-10 md:py-20" aria-labelledby="stats-heading">
+    <div class="bg-black border border-gray-600 rounded-3xl p-8 md:p-12 lg:p-20">
+      <h2 id="stats-heading" class="sr-only">Key Statistics and Achievements</h2>
+      <div class="flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-36">
+        
+        <div class="text-center">
+          <h3 class="text-[#C8FEC7] text-stat-xl font-bold uppercase">90%</h3>
+          <p class="text-[#C8FEC7] text-xl md:text-stat-lg font-semibold mt-3 md:mt-5">Job Success<br>Score on Upwork</p>
+        </div>
+        
+        <div class="hidden lg:flex w-20 h-20 border-4 border-[#C8FEC7] rounded-full items-center justify-center flex-shrink-0">
+          <img src="https://static.codia.ai/image/2025-12-05/m919MPivfp.png" alt="Upwork Icon" class="w-10 h-10">
+        </div>
+        
+        <div class="text-center">
+          <h3 class="text-[#C8FEC7] text-stat-xl font-bold uppercase">>25.000</h3>
+          <p class="text-[#C8FEC7] text-xl md:text-stat-lg font-semibold mt-3 md:mt-5">Duplicates on Figma<br>Community</p>
+        </div>
+        
+        <div class="hidden lg:flex w-20 h-20 border-4 border-[#C8FEC7] rounded-full items-center justify-center flex-shrink-0">
+          <img src="https://static.codia.ai/image/2025-12-05/qsViwuB4jE.png" alt="Figma Icon" class="w-10 h-10">
+        </div>
+        
+        <div class="text-center">
+          <h3 class="text-[#C8FEC7] text-stat-xl font-bold uppercase">>2k</h3>
+          <p class="text-[#C8FEC7] text-xl md:text-stat-lg font-semibold mt-3 md:mt-5 tracking-tight">In Finished<br>Works</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  ---
+
+  <section class="container mx-auto px-6 lg:px-24 py-10 md:py-20" id="portfolio">
+    <h2 class="text-white text-4xl lg:text-5xl font-bold uppercase mb-10 lg:mb-16">PORTFOLIO</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      
+      <article class="bg-black border border-gray-600 rounded-lg p-6 md:p-8">
+        <img src="https://static.codia.ai/image/2025-12-05/MMdpMb9Yji.png" alt="Preview of Chaintech Product" class="w-full h-40 md:h-50 object-cover rounded mb-6">
+        <div class="mb-6">
+          <h3 class="text-white text-xl md:text-2xl font-bold mb-3">Chaintech Product</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-purple-900/20 text-purple-400 px-3 py-1 rounded-full text-xs border border-purple-500/30 font-medium">UX Design</span>
+            <span class="bg-purple-900/20 text-purple-400 px-3 py-1 rounded-full text-xs border border-purple-500/30 font-medium">Angular</span>
+            <span class="bg-purple-900/20 text-purple-400 px-3 py-1 rounded-full text-xs border border-purple-500/30 font-medium">JavaScript</span>
+          </div>
+        </div>
+        <a href="#" class="block text-center bg-gray-800 text-white px-6 py-3 rounded w-full hover:bg-gray-700 transition" aria-label="View Chaintech Product Detail">
+          View Product Detail
+        </a>
+      </article>
+      
+      <article class="bg-black border border-gray-600 rounded-lg p-6 md:p-8">
+        <img src="https://static.codia.ai/image/2025-12-05/LvE0Bsb9JK.png" alt="Preview of Chaintech Product" class="w-full h-40 md:h-50 object-cover rounded mb-6">
+        <div class="mb-6">
+          <h3 class="text-white text-xl md:text-2xl font-bold mb-3">Chaintech Product</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-purple-900/20 text-purple-400 px-3 py-1 rounded-full text-xs border border-purple-500/30 font-medium">UX Design</span>
+            <span class="bg-purple-900/20 text-purple-400 px-3 py-1 rounded-full text-xs border border-purple-500/30 font-medium">Angular</span>
+            <span class="bg-purple-900/20 text-purple-400 px-3 py-1 rounded-full text-xs border border-purple-500/30 font-medium">JavaScript</span>
+          </div>
+        </div>
+        <a href="#" class="block text-center bg-gray-800 text-white px-6 py-3 rounded w-full hover:bg-gray-700 transition" aria-label="View Chaintech Product Detail">
+          View Product Detail
+        </a>
+      </article>
+
+      <article class="bg-black border border-gray-600 rounded-lg p-6 md:p-8">
+        <img src="https://static.codia.ai/image/2025-12-05/SFV6FGjqOT.png" alt="Preview of Chaintech Product" class="w-full h-40 md:h-50 object-cover rounded mb-6">
+        <div class="mb-6">
+          <h3 class="text-white text-xl md:text-2xl font-bold mb-3">Chaintech Product</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-purple-900/20 text-purple-400 px-3 py-1 rounded-full text-xs border border-purple-500/30 font-medium">UX Design</span>
+            <span class="bg-purple-900/20 text-purple-400 px-3 py-1 rounded-full text-xs border border-purple-500/30 font-medium">Angular</span>
+            <span class="bg-purple-900/20 text-purple-400 px-3 py-1 rounded-full text-xs border border-purple-500/30 font-medium">JavaScript</span>
+          </div>
+        </div>
+        <a href="#" class="block text-center bg-gray-800 text-white px-6 py-3 rounded w-full hover:bg-gray-700 transition" aria-label="View Chaintech Product Detail">
+          View Product Detail
+        </a>
+      </article>
+      
+      <article class="bg-black border border-gray-600 rounded-lg p-6 md:p-8">
+        <img src="https://static.codia.ai/image/2025-12-05/a2UMhhhf21.png" alt="Preview of Chaintech Product" class="w-full h-40 md:h-50 object-cover rounded mb-6">
+        <div class="mb-6">
+          <h3 class="text-white text-xl md:text-2xl font-bold mb-3">Chaintech Product</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-purple-900/20 text-purple-400 px-3 py-1 rounded-full text-xs border border-purple-500/30 font-medium">UX Design</span>
+            <span class="bg-purple-900/20 text-purple-400 px-3 py-1 rounded-full text-xs border border-purple-500/30 font-medium">Angular</span>
+            <span class="bg-purple-900/20 text-purple-400 px-3 py-1 rounded-full text-xs border border-purple-500/30 font-medium">JavaScript</span>
+          </div>
+        </div>
+        <a href="#" class="block text-center bg-gray-800 text-white px-6 py-3 rounded w-full hover:bg-gray-700 transition" aria-label="View Chaintech Product Detail">
+          View Product Detail
+        </a>
+      </article>
+
+      <article class="bg-black border border-gray-600 rounded-lg p-6 md:p-8">
+        <img src="https://static.codia.ai/image/2025-12-05/qmYwoO1T6M.png" alt="Preview of Chaintech Product" class="w-full h-40 md:h-50 object-cover rounded mb-6">
+        <div class="mb-6">
+          <h3 class="text-white text-xl md:text-2xl font-bold mb-3">Chaintech Product</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-purple-900/20 text-purple-400 px-3 py-1 rounded-full text-xs border border-purple-500/30 font-medium">UX Design</span>
+            <span class="bg-purple-900/20 text-purple-400 px-3 py-1 rounded-full text-xs border border-purple-500/30 font-medium">Angular</span>
+            <span class="bg-purple-900/20 text-purple-400 px-3 py-1 rounded-full text-xs border border-purple-500/30 font-medium">JavaScript</span>
+          </div>
+        </div>
+        <a href="#" class="block text-center bg-gray-800 text-white px-6 py-3 rounded w-full hover:bg-gray-700 transition" aria-label="View Chaintech Product Detail">
+          View Product Detail
+        </a>
+      </article>
+      
+      <article class="bg-black border border-gray-600 rounded-lg p-6 md:p-8">
+        <img src="https://static.codia.ai/image/2025-12-05/br8NwdCsCG.png" alt="Preview of Chaintech Product" class="w-full h-40 md:h-50 object-cover rounded mb-6">
+        <div class="mb-6">
+          <h3 class="text-white text-xl md:text-2xl font-bold mb-3">Chaintech Product</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-purple-900/20 text-purple-400 px-3 py-1 rounded-full text-xs border border-purple-500/30 font-medium">UX Design</span>
+            <span class="bg-purple-900/20 text-purple-400 px-3 py-1 rounded-full text-xs border border-purple-500/30 font-medium">Angular</span>
+            <span class="bg-purple-900/20 text-purple-400 px-3 py-1 rounded-full text-xs border border-purple-500/30 font-medium">JavaScript</span>
+          </div>
+        </div>
+        <a href="#" class="block text-center bg-gray-800 text-white px-6 py-3 rounded w-full hover:bg-gray-700 transition" aria-label="View Chaintech Product Detail">
+          View Product Detail
+        </a>
+      </article>
+
+      <article class="bg-black border border-gray-600 rounded-lg p-6 md:p-8">
+        <img src="https://static.codia.ai/image/2025-12-05/gNhMeUJEFg.png" alt="Preview of Chaintech Product" class="w-full h-40 md:h-50 object-cover rounded mb-6">
+        <div class="mb-6">
+          <h3 class="text-white text-xl md:text-2xl font-bold mb-3">Chaintech Product</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-purple-900/20 text-purple-400 px-3 py-1 rounded-full text-xs border border-purple-500/30 font-medium">UX Design</span>
+            <span class="bg-purple-900/20 text-purple-400 px-3 py-1 rounded-full text-xs border border-purple-500/30 font-medium">Angular</span>
+            <span class="bg-purple-900/20 text-purple-400 px-3 py-1 rounded-full text-xs border border-purple-500/30 font-medium">JavaScript</span>
+          </div>
+        </div>
+        <a href="#" class="block text-center bg-gray-800 text-white px-6 py-3 rounded w-full hover:bg-gray-700 transition" aria-label="View Chaintech Product Detail">
+          View Product Detail
+        </a>
+      </article>
+
+      <article class="bg-black border border-gray-600 rounded-lg p-6 md:p-8">
+        <img src="https://static.codia.ai/image/2025-12-05/BVf23n76ZY.png" alt="Preview of Chaintech Product" class="w-full h-40 md:h-50 object-cover rounded mb-6">
+        <div class="mb-6">
+          <h3 class="text-white text-xl md:text-2xl font-bold mb-3">Chaintech Product</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-purple-900/20 text-purple-400 px-3 py-1 rounded-full text-xs border border-purple-500/30 font-medium">UX Design</span>
+            <span class="bg-purple-900/20 text-purple-400 px-3 py-1 rounded-full text-xs border border-purple-500/30 font-medium">Angular</span>
+            <span class="bg-purple-900/20 text-purple-400 px-3 py-1 rounded-full text-xs border border-purple-500/30 font-medium">JavaScript</span>
+          </div>
+        </div>
+        <a href="#" class="block text-center bg-gray-800 text-white px-6 py-3 rounded w-full hover:bg-gray-700 transition" aria-label="View Chaintech Product Detail">
+          View Product Detail
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  ---
+
+  <section class="container mx-auto px-6 lg:px-24 py-10 md:py-20" id="skills">
+    <h2 class="text-white text-4xl lg:text-5xl font-bold uppercase mb-10 lg:mb-16">Skills</h2>
+    
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+      
+      <div class="bg-black border border-gray-600 rounded-lg p-6 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-5">
+        <div class="relative flex-shrink-0">
+          <img src="https://static.codia.ai/image/2025-12-05/g2ewUEsY0K.png" alt="97 percent UX Design skill progress graph" class="w-32 h-32 md:w-55 md:h-55">
+          <div class="absolute inset-0 flex items-center justify-center">
+            <span class="text-white text-3xl md:text-4xl font-medium">97%</span>
+          </div>
+        </div>
+        <div class="flex-1">
+          <h3 class="text-white text-3xl md:text-4xl font-bold mb-3 md:mb-5">UX Design</h3>
+          <p class="text-white text-base md:text-lg leading-relaxed">
+            User Experience (UX) design is the process of enhancing user satisfaction with a product by improving the usability, accessibility, and pleasure provided in the interaction.
+          </p>
+        </div>
+      </div>
+      
+      <div class="bg-black border border-gray-600 rounded-lg p-6 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-5">
+        <div class="relative flex-shrink-0">
+          <img src="https://static.codia.ai/image/2025-12-05/9PX6rS7nGw.png" alt="97 percent UI Design skill progress graph" class="w-32 h-32 md:w-55 md:h-55">
+          <div class="absolute inset-0 flex items-center justify-center">
+            <span class="text-white text-3xl md:text-4xl font-medium">97%</span>
+          </div>
+        </div>
+        <div class="flex-1">
+          <h3 class="text-white text-3xl md:text-4xl font-bold mb-3 md:mb-5">UI Design</h3>
+          <p class="text-white text-base md:text-lg leading-relaxed">
+            UI design is the process of designing the visual and interactive elements of a user interface, such as buttons, icons, and layout, to create an intuitive and pleasing experience for users.
+          </p>
+        </div>
+      </div>
+      
+      <div class="bg-black border border-gray-600 rounded-lg p-6 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-5">
+        <div class="relative flex-shrink-0">
+          <img src="https://static.codia.ai/image/2025-12-05/wcchOAxy8n.png" alt="97 percent Prototyping skill progress graph" class="w-32 h-32 md:w-55 md:h-55">
+          <div class="absolute inset-0 flex items-center justify-center">
+            <span class="text-white text-3xl md:text-4xl font-medium">97%</span>
+          </div>
+        </div>
+        <div class="flex-1">
+          <h3 class="text-white text-3xl md:text-4xl font-bold mb-3 md:mb-5">Prototyping</h3>
+          <p class="text-white text-base md:text-lg leading-relaxed">
+            Prototyping involves creating interactive models of a final product to test and refine the user flows and design elements before final development.
+          </p>
+        </div>
+      </div>
+      
+      <div class="bg-black border border-gray-600 rounded-lg p-6 md:p-10 flex flex-col md:flex-row items-start md:items-center gap-5">
+        <div class="relative flex-shrink-0">
+          <img src="https://static.codia.ai/image/2025-12-05/JaGiqShbAw.png" alt="97 percent Design Systems skill progress graph" class="w-32 h-32 md:w-55 md:h-55">
+          <div class="absolute inset-0 flex items-center justify-center">
+            <span class="text-white text-3xl md:text-4xl font-medium">97%</span>
+          </div>
+        </div>
+        <div class="flex-1">
+          <h3 class="text-white text-3xl md:text-4xl font-bold mb-3 md:mb-5">Design Systems</h3>
+          <p class="text-white text-base md:text-lg leading-relaxed">
+            A Design System is a complete set of standards and components used to manage design at scale through reusable elements and guidelines.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  ---
+
+  <section class="relative py-16 md:py-24" aria-label="Client Testimonial">
+    <div class="absolute inset-0">
+      <img src="https://static.codia.ai/image/2025-12-05/7QURO2x6GL.png" alt="Abstract dark purple background" class="w-full h-full object-cover">
+    </div>
+    <div class="relative z-10 container mx-auto px-6 lg:px-24 text-center">
+      <div class="space-y-6 md:space-y-10">
+        <h3 class="text-white text-3xl md:text-5xl font-semibold leading-tight">Kaleb Lechtenberg</h3>
+        <blockquote class="text-white text-xl md:text-4xl font-medium leading-relaxed max-w-4xl mx-auto">
+          "Working with this freelancer has been great. His attention to detail is unparalleled and finished all work ahead of schedule. Will gladly send more work and I do not hesitate to recommend him to you on your project also."
+        </blockquote>
+        <img src="https://static.codia.ai/image/2025-12-05/kRF2e2ZCMC.png" alt="Shield of Excellence Icon" class="w-16 h-18 mx-auto">
+      </div>
+    </div>
+  </section>
+
+  ---
+
+  <section class="container mx-auto px-6 lg:px-24 py-10 md:py-20">
+    <div class="bg-purple-400 rounded-2xl relative overflow-hidden p-10 md:p-0 min-h-[200px] flex items-center justify-center">
+      
+      <img src="https://static.codia.ai/image/2025-12-05/miqdnN5rjR.png" alt="Decorative shape left" class="absolute left-0 bottom-0 w-24 h-20 md:w-38 md:h-32 opacity-50">
+      <img src="https://static.codia.ai/image/2025-12-05/jrAF3RnCCy.png" alt="Decorative shape right" class="absolute right-0 top-0 w-24 h-20 md:w-38 md:h-32 opacity-50">
+      
+      <div class="relative z-10 flex flex-col md:flex-row items-center justify-center h-full text-center gap-6 md:gap-16">
+        <div class="hidden lg:block">
+          <img src="https://static.codia.ai/image/2025-12-05/fKqGV6VZAc.png" alt="Stylized Design Studio Icon" class="w-40 h-48">
+        </div>
+        <p class="text-white text-lg md:text-2xl leading-relaxed tracking-tight max-w-lg">
+          Thanks for visit my website<br>
+          If you have any questions you can write me to any of my social networks, I am sure I will answer you.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="border-t border-gray-600 py-8">
+    <div class="container mx-auto px-6 lg:px-24">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+        <a href="#" class="flex items-center gap-3" aria-label="Cristian Munoz Web Design Home">
+          <img src="https://static.codia.ai/image/2025-12-05/b56yXOHYDp.png" alt="Logo" class="w-10 h-10 md:w-15 md:h-15">
+          <span class="text-white text-4xl md:text-5xl font-bold">Web</span>
+        </a>
+        
+        <nav class="flex items-center gap-4 md:gap-8 text-sm md:text-xl" aria-label="Footer Navigation">
+          <a href="#hero" class="text-white hover:text-gray-300">Home</a>
+          <a href="#portfolio" class="text-white hover:text-gray-300">Portfolio</a>
+          <a href="#skills" class="text-white hover:text-gray-300">Skills</a>
+          <a href="#" class="text-white hover:text-gray-300">About Me</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
